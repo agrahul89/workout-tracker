@@ -4,15 +4,15 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>tech.iiht</groupId>
-	<artifactId>workout_tracker</artifactId>
+	<artifactId>workout-tracker-service</artifactId>
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
 	<name>Workout Tracker</name>
-	<description></description>
+	<description>A Spring-Boot-JPA based REST API utilizing Spring Security with JWT for authentication and authorization</description>
 
 	<scm>
-		<url>https://github.com/agrahul89/workout_tracker</url>
+		<url>https://github.com/agrahul89/workout-tracker</url>
 	</scm>
 
 	<parent>
@@ -105,9 +105,7 @@
 				</configuration>
 				<executions>
 					<execution>
-						<goals>
-							<goal>repackage</goal>
-						</goals>
+						<goals><goal>repackage</goal></goals>
 						<configuration>
 							<classifier>exec</classifier>
 							<attach>false</attach>
