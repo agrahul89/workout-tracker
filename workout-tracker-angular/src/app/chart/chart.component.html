@@ -1,0 +1,20 @@
+<div class="chart-container">
+  <div class="date-range-controls">
+    <input class="form-control" id="daterange" name="daterange" placeholder="Select a range" readonly
+    bsDaterangepicker #range="bsDaterangepicker" [(ngModel)]="daterange"
+    [bsConfig]="daterangePickerConfig" [outsideClick]="true" (bsValueChange)="refreshChart($event)">
+  </div>
+  <div class="chart-area d-flex justify-content-center align-items-center" id="chart-area">
+    <i class="fa fa-pie-chart fa-15x text-silhouette" [hidden]="daterange.length > 0"></i>
+  </div>
+  <div class="quick-controls d-flex align-items-center">
+      <button type="button" class= "flex-fill btn btn-primary px-5"
+      (click)="refreshForToday()">Today</button>
+      <button type="button" class= "flex-fill btn btn-dark px-4"
+      (click)="refreshForYesterday()">Yesterday</button>
+      <button type="button" class= "flex-fill btn btn-info px-3"
+      (click)="refreshForThisWeek()">Current Week</button>
+      <button type="button" class= "flex-fill btn btn-secondary"
+      (click)="refreshForPrevWeek()">Previous Week</button>
+    </div>
+</div>

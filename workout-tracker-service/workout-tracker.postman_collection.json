@@ -1,0 +1,3005 @@
+{
+	"info": {
+		"_postman_id": "8364e255-bc0e-4bbd-9c11-375ce26163f6",
+		"name": "workout-tracker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Email Exists",
+			"description": "",
+			"item": [
+				{
+					"name": "Email Exists? 200_OK",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/tracker/registration/email/test1@test.mail/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tracker",
+								"registration",
+								"email",
+								"test1@test.mail",
+								""
+							]
+						},
+						"description": "Check if Email Exists | \nNO_CONTENT(204) - Resource does not exists and is OK | \n        OK(200) - Resource does exists and is an error"
+					},
+					"response": [
+						{
+							"id": "c5aab5fc-d281-4bce-93a3-7418eacda006",
+							"name": "Email Exists? 200_OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "http://localhost:8080/tracker/registration/email/test@test.mail/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tracker",
+										"registration",
+										"email",
+										"test@test.mail",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 May 2018 21:01:42 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Expires",
+									"value": "0",
+									"name": "Expires",
+									"description": "Gives the date/time after which the response is considered stale"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff",
+									"name": "X-Content-Type-Options",
+									"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY",
+									"name": "X-Frame-Options",
+									"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block",
+									"name": "X-XSS-Protection",
+									"description": "Cross-site scripting (XSS) filter"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Tue Jan 19 2038 08:44:07 GMT+0530 (India Standard Time)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/tracker",
+									"secure": false,
+									"value": "46456B17DE8EF4798C415D0A21CD1FE0",
+									"key": "JSESSIONID"
+								}
+							],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Email Exists? 204_NO_CONTENT",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/tracker/registration/email/test@test.mail/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tracker",
+								"registration",
+								"email",
+								"test@test.mail",
+								""
+							]
+						},
+						"description": "Check if Email Exists | \nNO_CONTENT(204) - Resource does not exists and is OK | \n        OK(200) - Resource does exists and is an error"
+					},
+					"response": [
+						{
+							"id": "3f9b86dd-9dc7-4d50-a040-36c7c9386cfa",
+							"name": "Email Exists? 302_FOUND",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "http://localhost:8080/tracker/registration/email/test1@test.mail/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tracker",
+										"registration",
+										"email",
+										"test1@test.mail",
+										""
+									]
+								}
+							},
+							"status": "Found",
+							"code": 302,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 May 2018 21:01:31 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Expires",
+									"value": "0",
+									"name": "Expires",
+									"description": "Gives the date/time after which the response is considered stale"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff",
+									"name": "X-Content-Type-Options",
+									"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY",
+									"name": "X-Frame-Options",
+									"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block",
+									"name": "X-XSS-Protection",
+									"description": "Cross-site scripting (XSS) filter"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Tue Jan 19 2038 08:44:07 GMT+0530 (India Standard Time)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/tracker",
+									"secure": false,
+									"value": "46456B17DE8EF4798C415D0A21CD1FE0",
+									"key": "JSESSIONID"
+								}
+							],
+							"body": ""
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			}
+		},
+		{
+			"name": "Registration",
+			"description": "",
+			"item": [
+				{
+					"name": "Registration ? No Request Body",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/tracker/registration",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tracker",
+								"registration"
+							]
+						},
+						"description": "Register new User | \nCREATED(201) - User regsitered successfully, Use Location header for Login URL | \nBAD REQUEST(400) - Invalid Request Body (See Message for details) | \nCONFLICT(409) - User already registered | \nINTERNAL SERVER ERROR(500) - Unknown processing error"
+					},
+					"response": [
+						{
+							"id": "2ca2a194-568f-4306-b249-95c6914136ee",
+							"name": "Registration ? No Request Body",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/tracker/registration",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tracker",
+										"registration"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "close",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 May 2018 21:01:54 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Expires",
+									"value": "0",
+									"name": "Expires",
+									"description": "Gives the date/time after which the response is considered stale"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff",
+									"name": "X-Content-Type-Options",
+									"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY",
+									"name": "X-Frame-Options",
+									"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block",
+									"name": "X-XSS-Protection",
+									"description": "Cross-site scripting (XSS) filter"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Tue Jan 19 2038 08:44:07 GMT+0530 (India Standard Time)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/tracker",
+									"secure": false,
+									"value": "46456B17DE8EF4798C415D0A21CD1FE0",
+									"key": "JSESSIONID"
+								}
+							],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Registration ? Empty Request Body",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/tracker/registration",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tracker",
+								"registration"
+							]
+						},
+						"description": "Register new User | \nCREATED(201) - User regsitered successfully, Use Location header for Login URL | \nBAD REQUEST(400) - Invalid Request Body (See Message for details) | \nCONFLICT(409) - User already registered | \nINTERNAL SERVER ERROR(500) - Unknown processing error"
+					},
+					"response": [
+						{
+							"id": "6152ec0c-03e5-4c68-a1d7-12c1a4bcd699",
+							"name": "Registration ? Empty Request Body",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/tracker/registration",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tracker",
+										"registration"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "close",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 May 2018 21:02:02 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Expires",
+									"value": "0",
+									"name": "Expires",
+									"description": "Gives the date/time after which the response is considered stale"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked",
+									"name": "Transfer-Encoding",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff",
+									"name": "X-Content-Type-Options",
+									"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY",
+									"name": "X-Frame-Options",
+									"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block",
+									"name": "X-XSS-Protection",
+									"description": "Cross-site scripting (XSS) filter"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Tue Jan 19 2038 08:44:07 GMT+0530 (India Standard Time)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/tracker",
+									"secure": false,
+									"value": "46456B17DE8EF4798C415D0A21CD1FE0",
+									"key": "JSESSIONID"
+								}
+							],
+							"body": "{\"status\":false,\"messages\":[\"One or more mandatory fields(First Name, Last Name, Email, Password) are missing\"]}"
+						}
+					]
+				},
+				{
+					"name": "Registration ? Missing Mandatory Parameter (email)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstname\" : \"Chaturbhuj\",\n\t\"lastname\" : \"Agarwal\",\n\t\"password\" : \"P@ssw4rd\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/tracker/registration",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tracker",
+								"registration"
+							]
+						},
+						"description": "Register new User | \nCREATED(201) - User regsitered successfully, Use Location header for Login URL | \nBAD REQUEST(400) - Invalid Request Body (See Message for details) | \nCONFLICT(409) - User already registered | \nINTERNAL SERVER ERROR(500) - Unknown processing error"
+					},
+					"response": [
+						{
+							"id": "230ae5f9-0af1-4d99-8ffb-d5c7afba054c",
+							"name": "Registration ? Missing Mandatory Parameter (email)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"firstname\" : \"Chaturbhuj\",\n\t\"lastname\" : \"Agarwal\",\n\t\"password\" : \"P@ssw4rd\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/tracker/registration",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tracker",
+										"registration"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "close",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 May 2018 21:02:10 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Expires",
+									"value": "0",
+									"name": "Expires",
+									"description": "Gives the date/time after which the response is considered stale"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked",
+									"name": "Transfer-Encoding",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff",
+									"name": "X-Content-Type-Options",
+									"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY",
+									"name": "X-Frame-Options",
+									"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block",
+									"name": "X-XSS-Protection",
+									"description": "Cross-site scripting (XSS) filter"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Tue Jan 19 2038 08:44:07 GMT+0530 (India Standard Time)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/tracker",
+									"secure": false,
+									"value": "46456B17DE8EF4798C415D0A21CD1FE0",
+									"key": "JSESSIONID"
+								}
+							],
+							"body": "{\"status\":false,\"messages\":[\"One or more mandatory fields(First Name, Last Name, Email, Password) are missing\"]}"
+						}
+					]
+				},
+				{
+					"name": "Registration ? 500_ERROR",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstname\" : \"Chandan\",\n\t\"lastname\" : \"Agarwal\",\n\t\"password\" : \"P@ssw6rd\",\n\t\"email\" : \"test6@test.mail\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/tracker/registration",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tracker",
+								"registration"
+							]
+						},
+						"description": "Register new User | \nCREATED(201) - User regsitered successfully, Use Location header for Login URL | \nBAD REQUEST(400) - Invalid Request Body (See Message for details) | \nCONFLICT(409) - User already registered | \nINTERNAL SERVER ERROR(500) - Unknown processing error"
+					},
+					"response": [
+						{
+							"id": "a891f116-8920-408c-8109-0ea79d7bbb8b",
+							"name": "Registration ? 500_ERROR",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"firstname\" : \"Mohit\",\n\t\"lastname\" : \"Agarwal\",\n\t\"password\" : \"P@ssw7rd\",\n\t\"email\" : \"test7@test.mail\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/tracker/registration",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tracker",
+										"registration"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "close",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 May 2018 21:03:37 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Expires",
+									"value": "0",
+									"name": "Expires",
+									"description": "Gives the date/time after which the response is considered stale"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked",
+									"name": "Transfer-Encoding",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff",
+									"name": "X-Content-Type-Options",
+									"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY",
+									"name": "X-Frame-Options",
+									"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block",
+									"name": "X-XSS-Protection",
+									"description": "Cross-site scripting (XSS) filter"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Tue Jan 19 2038 08:44:07 GMT+0530 (India Standard Time)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/tracker",
+									"secure": false,
+									"value": "46456B17DE8EF4798C415D0A21CD1FE0",
+									"key": "JSESSIONID"
+								}
+							],
+							"body": "{\"status\":false,\"messages\":[\"User Registration Failed\"]}"
+						}
+					]
+				},
+				{
+					"name": "Registration ? 409_CONFLICT",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstname\" : \"Chaturbhuj\",\n\t\"lastname\" : \"Agarwal\",\n\t\"password\" : \"P@ssw4rd\",\n\t\"email\" : \"test4@test.mail\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/tracker/registration",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tracker",
+								"registration"
+							]
+						},
+						"description": "Register new User | \nCREATED(201) - User regsitered successfully, Use Location header for Login URL | \nBAD REQUEST(400) - Invalid Request Body (See Message for details) | \nCONFLICT(409) - User already registered | \nINTERNAL SERVER ERROR(500) - Unknown processing error"
+					},
+					"response": [
+						{
+							"id": "74fed4c6-4ccd-4286-91da-f957f21513e8",
+							"name": "Registration ? 409_CONFLICT",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"firstname\" : \"Chaturbhuj\",\n\t\"lastname\" : \"Agarwal\",\n\t\"password\" : \"P@ssw4rd\",\n\t\"email\" : \"test4@test.mail\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/tracker/registration",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tracker",
+										"registration"
+									]
+								}
+							},
+							"status": "Conflict",
+							"code": 409,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 May 2018 21:03:59 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Expires",
+									"value": "0",
+									"name": "Expires",
+									"description": "Gives the date/time after which the response is considered stale"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked",
+									"name": "Transfer-Encoding",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff",
+									"name": "X-Content-Type-Options",
+									"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY",
+									"name": "X-Frame-Options",
+									"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block",
+									"name": "X-XSS-Protection",
+									"description": "Cross-site scripting (XSS) filter"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Tue Jan 19 2038 08:44:07 GMT+0530 (India Standard Time)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/tracker",
+									"secure": false,
+									"value": "46456B17DE8EF4798C415D0A21CD1FE0",
+									"key": "JSESSIONID"
+								}
+							],
+							"body": "{\"status\":false,\"messages\":[\"User already registered with provided email\"],\"data\":{\"id\":null,\"firstname\":\"Chaturbhuj\",\"lastname\":\"Agarwal\",\"email\":\"test4@test.mail\",\"password\":null,\"username\":\"test4@test.mail\",\"enabled\":true,\"accountNonExpired\":true,\"accountNonLocked\":true,\"credentialsNonExpired\":true}}"
+						}
+					]
+				},
+				{
+					"name": "Registration ? 201_CREATED",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstname\" : \"Rahul\",\n\t\"lastname\" : \"Agarwal\",\n\t\"password\" : \"P@ssw0rd\",\n\t\"email\" : \"test0@test.mail\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/tracker/registration",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tracker",
+								"registration"
+							]
+						},
+						"description": "Register new User | \nCREATED(201) - User regsitered successfully, Use Location header for Login URL | \nBAD REQUEST(400) - Invalid Request Body (See Message for details) | \nCONFLICT(409) - User already registered | \nINTERNAL SERVER ERROR(500) - Unknown processing error"
+					},
+					"response": [
+						{
+							"id": "51256b9e-1c53-4bf9-a07b-e8d7985f9485",
+							"name": "Registration ? 201_CREATED",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"firstname\" : \"Ritka\",\n\t\"lastname\" : \"Agarwal\",\n\t\"password\" : \"P@ssw8rd\",\n\t\"email\" : \"test8@test.mail\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/tracker/registration",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tracker",
+										"registration"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST",
+									"name": "Access-Control-Allow-Methods",
+									"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 May 2018 21:05:03 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Expires",
+									"value": "0",
+									"name": "Expires",
+									"description": "Gives the date/time after which the response is considered stale"
+								},
+								{
+									"key": "Location",
+									"value": "http://localhost:8080/tracker/login",
+									"name": "Location",
+									"description": "Used in redirection, or when a new resource has been created."
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked",
+									"name": "Transfer-Encoding",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff",
+									"name": "X-Content-Type-Options",
+									"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY",
+									"name": "X-Frame-Options",
+									"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block",
+									"name": "X-XSS-Protection",
+									"description": "Cross-site scripting (XSS) filter"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Tue Jan 19 2038 08:44:07 GMT+0530 (India Standard Time)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/tracker",
+									"secure": false,
+									"value": "46456B17DE8EF4798C415D0A21CD1FE0",
+									"key": "JSESSIONID"
+								}
+							],
+							"body": "{\"status\":true,\"messages\":[\"User registered successfully\"],\"data\":{\"id\":12,\"firstname\":\"Ritka\",\"lastname\":\"Agarwal\",\"email\":\"test8@test.mail\",\"password\":null,\"username\":\"test8@test.mail\",\"enabled\":true,\"accountNonExpired\":true,\"accountNonLocked\":true,\"credentialsNonExpired\":true}}"
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			}
+		},
+		{
+			"name": "Login",
+			"description": "",
+			"item": [
+				{
+					"name": "Login ? No Request Body",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/tracker/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tracker",
+								"login"
+							]
+						},
+						"description": "Authenticate usesr and get Auth Token | \nOK(200) - User authenticated successfully | \n{\n    \"username\": \"test3@test.mail\",\n    \"password\": \"$2a$10$oq04XrvycczppR0ycJ98M.zbA1Pr4BCNwuVfp4dSY3SQN1go4CxRu\",\n    \"authToken\": \"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0IiwiYXVkIjoiVVNFUiIsImlhdCI6MTUyNTI4Njg1MiwiZXhwIjoxNTI1MzczMjUyfQ.tQnmhE1gxZc5VLMjq5dlJsRQc3Yo2gpreaa9plB4ka6mHkzJSN5rxGXy9e-2dWG_lwLimMSNO8cdRfl6GPDoEQ\"\n}"
+					},
+					"response": [
+						{
+							"id": "079b84a6-7c3a-421c-a3b8-a9a8a1654617",
+							"name": "Login ? No Request Body",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/tracker/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tracker",
+										"login"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "close",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 May 2018 21:01:00 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Expires",
+									"value": "0",
+									"name": "Expires",
+									"description": "Gives the date/time after which the response is considered stale"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff",
+									"name": "X-Content-Type-Options",
+									"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY",
+									"name": "X-Frame-Options",
+									"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block",
+									"name": "X-XSS-Protection",
+									"description": "Cross-site scripting (XSS) filter"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Tue Jan 19 2038 08:44:07 GMT+0530 (India Standard Time)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/tracker",
+									"secure": false,
+									"value": "46456B17DE8EF4798C415D0A21CD1FE0",
+									"key": "JSESSIONID"
+								}
+							],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Login ? Empty Request Body",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/tracker/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tracker",
+								"login"
+							]
+						},
+						"description": "Authenticate usesr and get Auth Token | \nOK(200) - User authenticated successfully | \n{\n    \"username\": \"test3@test.mail\",\n    \"password\": \"$2a$10$oq04XrvycczppR0ycJ98M.zbA1Pr4BCNwuVfp4dSY3SQN1go4CxRu\",\n    \"authToken\": \"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0IiwiYXVkIjoiVVNFUiIsImlhdCI6MTUyNTI4Njg1MiwiZXhwIjoxNTI1MzczMjUyfQ.tQnmhE1gxZc5VLMjq5dlJsRQc3Yo2gpreaa9plB4ka6mHkzJSN5rxGXy9e-2dWG_lwLimMSNO8cdRfl6GPDoEQ\"\n}"
+					},
+					"response": [
+						{
+							"id": "898437a8-78b7-4e85-b45a-ac9a97f839ad",
+							"name": "Login ? Empty Request Body",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/tracker/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tracker",
+										"login"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST",
+									"name": "Access-Control-Allow-Methods",
+									"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 May 2018 21:00:42 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Expires",
+									"value": "0",
+									"name": "Expires",
+									"description": "Gives the date/time after which the response is considered stale"
+								},
+								{
+									"key": "Location",
+									"value": "http://localhost:8080/tracker/login",
+									"name": "Location",
+									"description": "Used in redirection, or when a new resource has been created."
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff",
+									"name": "X-Content-Type-Options",
+									"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY",
+									"name": "X-Frame-Options",
+									"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block",
+									"name": "X-XSS-Protection",
+									"description": "Cross-site scripting (XSS) filter"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Tue Jan 19 2038 08:44:07 GMT+0530 (India Standard Time)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/tracker",
+									"secure": false,
+									"value": "46456B17DE8EF4798C415D0A21CD1FE0",
+									"key": "JSESSIONID"
+								}
+							],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Login ? Missing Mandatory Parameter (password)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"test1@test.mail\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/tracker/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tracker",
+								"login"
+							]
+						},
+						"description": "Authenticate usesr and get Auth Token | \nOK(200) - User authenticated successfully | \n{\n    \"username\": \"test3@test.mail\",\n    \"password\": \"$2a$10$oq04XrvycczppR0ycJ98M.zbA1Pr4BCNwuVfp4dSY3SQN1go4CxRu\",\n    \"authToken\": \"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0IiwiYXVkIjoiVVNFUiIsImlhdCI6MTUyNTI4Njg1MiwiZXhwIjoxNTI1MzczMjUyfQ.tQnmhE1gxZc5VLMjq5dlJsRQc3Yo2gpreaa9plB4ka6mHkzJSN5rxGXy9e-2dWG_lwLimMSNO8cdRfl6GPDoEQ\"\n}"
+					},
+					"response": [
+						{
+							"id": "f00235a7-5e0c-4b2a-9bf0-3d48b3db8756",
+							"name": "Login ? Missing Mandatory Parameter (password)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\":\"test1@test.mail\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/tracker/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tracker",
+										"login"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST",
+									"name": "Access-Control-Allow-Methods",
+									"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 May 2018 20:59:19 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Expires",
+									"value": "0",
+									"name": "Expires",
+									"description": "Gives the date/time after which the response is considered stale"
+								},
+								{
+									"key": "Location",
+									"value": "http://localhost:8080/tracker/login",
+									"name": "Location",
+									"description": "Used in redirection, or when a new resource has been created."
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff",
+									"name": "X-Content-Type-Options",
+									"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY",
+									"name": "X-Frame-Options",
+									"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block",
+									"name": "X-XSS-Protection",
+									"description": "Cross-site scripting (XSS) filter"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Tue Jan 19 2038 08:44:07 GMT+0530 (India Standard Time)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/tracker",
+									"secure": false,
+									"value": "46456B17DE8EF4798C415D0A21CD1FE0",
+									"key": "JSESSIONID"
+								}
+							],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Login ? 200_OK",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"test0@test.mail\",\n\t\"password\":\"P@ssw0rd\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/tracker/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tracker",
+								"login"
+							]
+						},
+						"description": "Authenticate usesr and get Auth Token | \nOK(200) - User authenticated successfully | \n{\n    \"username\": \"test3@test.mail\",\n    \"password\": \"$2a$10$oq04XrvycczppR0ycJ98M.zbA1Pr4BCNwuVfp4dSY3SQN1go4CxRu\",\n    \"authToken\": \"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0IiwiYXVkIjoiVVNFUiIsImlhdCI6MTUyNTI4Njg1MiwiZXhwIjoxNTI1MzczMjUyfQ.tQnmhE1gxZc5VLMjq5dlJsRQc3Yo2gpreaa9plB4ka6mHkzJSN5rxGXy9e-2dWG_lwLimMSNO8cdRfl6GPDoEQ\"\n}"
+					},
+					"response": [
+						{
+							"id": "cb51406f-ad3d-4c34-9fc7-b2f1e1605a99",
+							"name": "Login ? 200_OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\":\"test2@test.mail\",\n\t\"password\":\"P@ssw2rd\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/tracker/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tracker",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 May 2018 21:07:03 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Expires",
+									"value": "0",
+									"name": "Expires",
+									"description": "Gives the date/time after which the response is considered stale"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked",
+									"name": "Transfer-Encoding",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff",
+									"name": "X-Content-Type-Options",
+									"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY",
+									"name": "X-Frame-Options",
+									"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block",
+									"name": "X-XSS-Protection",
+									"description": "Cross-site scripting (XSS) filter"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Tue Jan 19 2038 08:44:07 GMT+0530 (India Standard Time)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/tracker",
+									"secure": false,
+									"value": "46456B17DE8EF4798C415D0A21CD1FE0",
+									"key": "JSESSIONID"
+								}
+							],
+							"body": "{\"username\":\"test2@test.mail\",\"password\":\"$2a$10$WnuvW8a.c/tI7GMBa5CMd.Nw05FtZDfodb65j9oF8TFMOrRJMCyEi\",\"authToken\":\"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2IiwiYXVkIjoiVVNFUiIsImlhdCI6MTUyNTU1NDQyMCwiZXhwIjoxNTI1NjQwODIwfQ.DDuLMXycvTv6qjmyASq32MTUEjTGiLHhYTSvoAyXBXyJGhRvcGLdNBf7s8jdC0YfJYq_Qctjkz8lUVczG1kKQA\"}"
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			}
+		},
+		{
+			"name": "Category",
+			"description": "",
+			"item": [
+				{
+					"name": "Create Category ? 401_UNAUTHORIZED | No Auth Header",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"category\":\"Marathoning\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/tracker/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tracker",
+								"category"
+							]
+						},
+						"description": "CREATED(201) - A new Category was created. See 'Location' header for URL to resource along with supported HTTP method in 'Allow' header | \nINTERNAL SERVER ERROR(500) - Category was not created due to unknown server issue"
+					},
+					"response": [
+						{
+							"id": "efa41c9a-9db6-4842-b80e-7254a58a0cc2",
+							"name": "Create Category ? 401_UNAUTHORIZED | No Auth Header",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"category\":\"Marathoning\"}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/tracker/category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tracker",
+										"category"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Allow",
+									"value": "POST",
+									"name": "Allow",
+									"description": "Valid actions for a specified resource. To be used for a 405 Method not allowed"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 May 2018 21:09:49 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Expires",
+									"value": "0",
+									"name": "Expires",
+									"description": "Gives the date/time after which the response is considered stale"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked",
+									"name": "Transfer-Encoding",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff",
+									"name": "X-Content-Type-Options",
+									"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY",
+									"name": "X-Frame-Options",
+									"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block",
+									"name": "X-XSS-Protection",
+									"description": "Cross-site scripting (XSS) filter"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Tue Jan 19 2038 08:44:07 GMT+0530 (India Standard Time)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/tracker",
+									"secure": false,
+									"value": "46456B17DE8EF4798C415D0A21CD1FE0",
+									"key": "JSESSIONID"
+								}
+							],
+							"body": "{\"timestamp\":1525554589647,\"status\":401,\"error\":\"Unauthorized\",\"message\":\"Full authentication is required to access this resource\",\"path\":\"/tracker/category\"}"
+						}
+					]
+				},
+				{
+					"name": "Create Category ? 201_CREATED",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"category\":\"Marathoning\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/tracker/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tracker",
+								"category"
+							]
+						},
+						"description": "CREATED(201) - A new Category was created. See 'Location' header for URL to resource along with supported HTTP method in 'Allow' header | \nINTERNAL SERVER ERROR(500) - Category was not created due to unknown server issue"
+					},
+					"response": [
+						{
+							"id": "266ee8e7-7181-437e-b3ef-c2136170f98c",
+							"name": "Create Category ? 201_CREATED",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"category\":\"Marathoning\"}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/tracker/category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tracker",
+										"category"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET",
+									"name": "Access-Control-Allow-Methods",
+									"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 May 2018 21:26:06 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Expires",
+									"value": "0",
+									"name": "Expires",
+									"description": "Gives the date/time after which the response is considered stale"
+								},
+								{
+									"key": "Location",
+									"value": "http://localhost:8080/tracker/category/9",
+									"name": "Location",
+									"description": "Used in redirection, or when a new resource has been created."
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff",
+									"name": "X-Content-Type-Options",
+									"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY",
+									"name": "X-Frame-Options",
+									"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block",
+									"name": "X-XSS-Protection",
+									"description": "Cross-site scripting (XSS) filter"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Tue Jan 19 2038 08:44:07 GMT+0530 (India Standard Time)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/tracker",
+									"secure": false,
+									"value": "46456B17DE8EF4798C415D0A21CD1FE0",
+									"key": "JSESSIONID"
+								}
+							],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get All Categories ? 204_NO CONTENT",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "88913879-19f0-4247-ab07-af0839015989",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "465424bd-8376-484a-8e76-3be4b5da824d",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/tracker/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tracker",
+								"category"
+							]
+						},
+						"description": "OK(200) - Data found and returned | \nNOT FOUND(204) - No Data Exists"
+					},
+					"response": [
+						{
+							"id": "ccb8a208-148b-42f1-b681-1a9d2b18c8d8",
+							"name": "Get All Categories ? 204_NO CONTENT",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "http://localhost:8080/tracker/category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tracker",
+										"category"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 May 2018 22:55:59 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Expires",
+									"value": "0",
+									"name": "Expires",
+									"description": "Gives the date/time after which the response is considered stale"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff",
+									"name": "X-Content-Type-Options",
+									"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY",
+									"name": "X-Frame-Options",
+									"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block",
+									"name": "X-XSS-Protection",
+									"description": "Cross-site scripting (XSS) filter"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Tue Jan 19 2038 08:44:07 GMT+0530 (India Standard Time)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/tracker",
+									"secure": false,
+									"value": "46456B17DE8EF4798C415D0A21CD1FE0",
+									"key": "JSESSIONID"
+								}
+							],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get All Categories ? 200_OK",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "88913879-19f0-4247-ab07-af0839015989",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "465424bd-8376-484a-8e76-3be4b5da824d",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/tracker/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tracker",
+								"category"
+							]
+						},
+						"description": "OK(200) - Data found and returned | \nNOT FOUND(204) - No Data Exists"
+					},
+					"response": [
+						{
+							"id": "a062fe66-0de0-43d9-accb-527c91fb00b7",
+							"name": "Get All Categories ? 200_OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "http://localhost:8080/tracker/category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tracker",
+										"category"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 18 Jun 2018 17:30:24 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Expires",
+									"value": "0",
+									"name": "Expires",
+									"description": "Gives the date/time after which the response is considered stale"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked",
+									"name": "Transfer-Encoding",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff",
+									"name": "X-Content-Type-Options",
+									"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY",
+									"name": "X-Frame-Options",
+									"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block",
+									"name": "X-XSS-Protection",
+									"description": "Cross-site scripting (XSS) filter"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Tue Jan 19 2038 08:44:07 GMT+0530 (India Standard Time)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/tracker",
+									"secure": false,
+									"value": "46456B17DE8EF4798C415D0A21CD1FE0",
+									"key": "JSESSIONID"
+								}
+							],
+							"body": "[{\"id\":6,\"category\":\"Cycle\"},{\"id\":7,\"category\":\"Swim\"},{\"id\":8,\"category\":\"Gym\"},{\"id\":9,\"category\":\"Marathon\"},{\"id\":12,\"category\":\"Crdio\"},{\"id\":13,\"category\":\"Pushup\"},{\"id\":14,\"category\":\"Situp\"},{\"id\":15,\"category\":\"Sprint\"}]"
+						}
+					]
+				},
+				{
+					"name": "Delete Category ? 200_OK",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "88913879-19f0-4247-ab07-af0839015989",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "465424bd-8376-484a-8e76-3be4b5da824d",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/tracker/category/9999",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tracker",
+								"category",
+								"9999"
+							]
+						},
+						"description": "OK(200) - Data found and returned | \nNOT FOUND(204) - No Data Exists"
+					},
+					"response": [
+						{
+							"id": "b6988688-086c-4524-952b-569a73c14dfb",
+							"name": "Delete Category ? 200_OK",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {},
+								"url": {
+									"raw": "http://localhost:8080/tracker/category/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tracker",
+										"category",
+										"1"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "close",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 18 Jun 2018 17:29:39 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Expires",
+									"value": "0",
+									"name": "Expires",
+									"description": "Gives the date/time after which the response is considered stale"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff",
+									"name": "X-Content-Type-Options",
+									"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY",
+									"name": "X-Frame-Options",
+									"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block",
+									"name": "X-XSS-Protection",
+									"description": "Cross-site scripting (XSS) filter"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Tue Jan 19 2038 08:44:07 GMT+0530 (India Standard Time)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/tracker",
+									"secure": false,
+									"value": "46456B17DE8EF4798C415D0A21CD1FE0",
+									"key": "JSESSIONID"
+								}
+							],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Update Category ? 200_OK",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\" : 1,\n\t\"category\" : \"Yoga\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/tracker/category/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tracker",
+								"category",
+								"1"
+							]
+						},
+						"description": "Update Category returns 200 if request was successful"
+					},
+					"response": [
+						{
+							"id": "31048fc7-6282-421a-8e4c-bb68f0e6a02e",
+							"name": "Update Category ? 200_OK",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"id\" : 1,\n\t\"category\" : \"Yoga\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/tracker/category/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tracker",
+										"category",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 24 Jun 2018 12:49:43 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Expires",
+									"value": "0",
+									"name": "Expires",
+									"description": "Gives the date/time after which the response is considered stale"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked",
+									"name": "Transfer-Encoding",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff",
+									"name": "X-Content-Type-Options",
+									"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY",
+									"name": "X-Frame-Options",
+									"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block",
+									"name": "X-XSS-Protection",
+									"description": "Cross-site scripting (XSS) filter"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Tue Jan 19 2038 08:44:07 GMT+0530 (India Standard Time)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/tracker",
+									"secure": false,
+									"value": "46456B17DE8EF4798C415D0A21CD1FE0",
+									"key": "JSESSIONID"
+								}
+							],
+							"body": "{\"id\":1,\"category\":\"Yoga\"}"
+						}
+					]
+				},
+				{
+					"name": "Update Category ? 204_NO_CONTENT",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\" : 1,\n\t\"category\" : \"Yog\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/tracker/category/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tracker",
+								"category",
+								"1"
+							]
+						},
+						"description": "Update Category returns 204 if category is non-existing"
+					},
+					"response": [
+						{
+							"id": "1cc2096c-75cf-4d26-a839-0d27f32ecbc8",
+							"name": "Update Category ? 204_NO_CONTENT",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"id\" : 1,\n\t\"category\" : \"Yoga\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/tracker/category/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tracker",
+										"category",
+										"1"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 24 Jun 2018 12:52:04 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Expires",
+									"value": "0",
+									"name": "Expires",
+									"description": "Gives the date/time after which the response is considered stale"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff",
+									"name": "X-Content-Type-Options",
+									"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY",
+									"name": "X-Frame-Options",
+									"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block",
+									"name": "X-XSS-Protection",
+									"description": "Cross-site scripting (XSS) filter"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Tue Jan 19 2038 08:44:07 GMT+0530 (India Standard Time)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/tracker",
+									"secure": false,
+									"value": "46456B17DE8EF4798C415D0A21CD1FE0",
+									"key": "JSESSIONID"
+								}
+							],
+							"body": ""
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{auth}}",
+						"type": "string"
+					}
+				]
+			}
+		},
+		{
+			"name": "Workout",
+			"description": "",
+			"item": [
+				{
+					"name": "Create Workout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"burnrate\":3.5,\n\t\"categoryid\":7,\n\t\"notes\":\"Swim Notes\",\n\t\"title\":\"Swim Far\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/tracker/workout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tracker",
+								"workout"
+							]
+						},
+						"description": "CREATED(201) - A new Workout was created. See 'Location' header for URL to resource along with supported HTTP method in 'Allow' header | \nINTERNAL SERVER ERROR(500) - Workout was not created due to unknown server issue"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Workout ? 200_OK",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{auth}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/tracker/workout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tracker",
+								"workout"
+							]
+						},
+						"description": "OK(200) - Data found and returned | \nNOT FOUND(204) - No Data Exists"
+					},
+					"response": [
+						{
+							"id": "81e62537-f5c7-421a-ad75-084b777d40ab",
+							"name": "Get All Workout ? 200_OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "http://localhost:8080/tracker/workout",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tracker",
+										"workout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 May 2018 23:01:59 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Expires",
+									"value": "0",
+									"name": "Expires",
+									"description": "Gives the date/time after which the response is considered stale"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked",
+									"name": "Transfer-Encoding",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff",
+									"name": "X-Content-Type-Options",
+									"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY",
+									"name": "X-Frame-Options",
+									"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block",
+									"name": "X-XSS-Protection",
+									"description": "Cross-site scripting (XSS) filter"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Tue Jan 19 2038 08:44:07 GMT+0530 (India Standard Time)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/tracker",
+									"secure": false,
+									"value": "46456B17DE8EF4798C415D0A21CD1FE0",
+									"key": "JSESSIONID"
+								}
+							],
+							"body": "[{\"id\":4,\"title\":\"Walk 15 Minutes\",\"notes\":\"Workout Notes\",\"burnrate\":2.0,\"category\":{\"id\":4,\"category\":\"Walking\"}}]"
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{auth}}",
+						"type": "string"
+					}
+				]
+			}
+		},
+		{
+			"name": "Home",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/tracker/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tracker",
+						""
+					]
+				},
+				"description": "Application Root - Redirect to Login Page | \nNO CONTENT(204) - Use 'Location' header for URL & 'Allow' header for HTTP method"
+			},
+			"response": [
+				{
+					"id": "d95c6161-2bc0-417f-bf53-01d650e15249",
+					"name": "Home",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/tracker/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tracker",
+								""
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 05 May 2018 21:08:13 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "0",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Location",
+							"value": "http://localhost:8080/tracker/login",
+							"name": "Location",
+							"description": "Used in redirection, or when a new resource has been created."
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"name": "X-Content-Type-Options",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY",
+							"name": "X-Frame-Options",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block",
+							"name": "X-XSS-Protection",
+							"description": "Cross-site scripting (XSS) filter"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Tue Jan 19 2038 08:44:07 GMT+0530 (India Standard Time)",
+							"httpOnly": true,
+							"domain": "localhost",
+							"path": "/tracker",
+							"secure": false,
+							"value": "46456B17DE8EF4798C415D0A21CD1FE0",
+							"key": "JSESSIONID"
+						}
+					],
+					"body": ""
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "tracker",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "iiht",
+				"type": "string"
+			}
+		]
+	}
+}

@@ -1,0 +1,33 @@
+button.disabled, button:disabled {
+  cursor: not-allowed;
+}
+
+input {
+  font-size: 0.8rem;
+}
+input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.section-header {
+  margin-bottom: 1rem;
+}
+
+/* Applies on items that failed validation and have been touched at least once */
+.ng-invalid:not(form).ng-touched  {
+  border-left: 3px solid var(--danger);
+}
+/* Applies on items that failed validation and currently on focus */
+.ng-invalid:focus  {
+  border: 1px solid var(--danger);
+  border-left: 3px solid var(--danger);
+}
+/* Applies on items that succeeded validation and are mandatory */
+.ng-valid:not(form)  {
+  border-left: 3px solid var(--primary);
+}
+.ng-valid:focus  {
+  border: 1px solid var(--primary);
+  border-left: 3px solid var(--primary);
+}

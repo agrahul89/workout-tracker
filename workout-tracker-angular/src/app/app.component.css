@@ -1,0 +1,46 @@
+header {
+  min-width: var(--min-width);
+  left:0px;
+  top:0px;
+  width:100%;
+  box-shadow: 0px 1px 20px 2px var(--shadow-color);
+  background-color: var(--bg-color);
+}
+
+nav {
+  line-height: 2rem;
+  padding-right: 2em;
+}
+nav a {
+  border-radius: 0%;
+  font-size: 0.9rem;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+nav a:hover {
+  border-top: 3px solid var(--accent-color);
+  transition: 200ms;
+}
+nav a:active {
+  border-top: 3px solid var(--accent-color);
+  transition: 100ms;
+}
+nav a label::before {
+  content: "\00a0";
+}
+
+.brand {
+  color: var(--accent-color);
+  font-style: italic;
+  line-height: 2em;
+  padding: 0 0 0 1em;
+}
+
+.content {
+  margin: 2rem auto;
+  padding: 1rem 2rem 3rem 2rem;
+  min-width: var(--min-width);
+  width: 80%;
+  max-width: 840px;
+  box-shadow: 0 1px 10px 2px var(--shadow-color);
+}

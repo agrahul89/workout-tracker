@@ -1,0 +1,48 @@
+html {
+  --accent-color: var(--primary);
+  --bg-color: rgba(256,256,256,1);
+  --header-text-color: rgba(0, 0, 0, 0.75);
+  --link-text-color: rgba(0, 0, 0, 0.55);
+  --shadow-color: rgba(211, 211, 211, 0.6);
+  --min-width: 320px;
+  overflow-y: scroll;
+}/*
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 16px;
+  }
+}*/
+/******************************************************************************/
+body {
+  margin: 0 auto;
+}
+
+form label, small {
+  font-style: italic;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: var(--header-text-color);
+  font-style: italic
+}
+
+a {
+  color: var(--link-text-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--link-text-color);
+}
+a:active {
+  color: var(--accent-color);
+  transition: 300ms;
+}
+
+.active-link {
+  border-bottom: 3px solid var(--accent-color);
+}

@@ -1,0 +1,43 @@
+.section-header {
+    margin-bottom: 1rem;
+}
+
+.card {
+    box-shadow: 0 1px 10px 2px var(--shadow-color);
+    margin: 0.35rem auto;
+}
+
+.card .buttons {
+    position: absolute;
+    z-index: 2;
+    top: 9.3rem;
+    right: 0;
+}
+
+.fa-6x {
+    font-size: 6em;
+ } .fa-7x {
+    font-size: 7em;
+} .fa-8x {
+    font-size: 8em;
+} .fa-9x {
+    font-size: 9em;
+}
+
+.text-silhouette {
+    color: var(--shadow-color);
+}
+
+button.rounded-circle {
+    border: none;
+    box-shadow: 2px 2px 3px 0 rgba(0,0,0,.12), 2px 2px 2px 0 rgba(0,0,0,.24);
+}
+button.rounded-circle:hover {
+    background-color: white;
+    box-shadow: 2px 2px 3px 0 rgba(0,0,0,.12), 2px 2px 2px 0 rgba(0,0,0,.24);
+    color: black;
+}
+
+input {
+    font-size: 0.8rem;
+}

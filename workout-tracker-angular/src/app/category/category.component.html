@@ -1,0 +1,83 @@
+<div class="category">
+  <h3 class="section-header">Category</h3>
+  <!-- <div class="form-group position-fixed fixed-bottom text-right mr-3 mb-3 ml-3">
+    <input type="text" class="form-control form-control-lg border-primary">
+    <button class="btn btn-lg btn-primary rounded-circle">
+      <i class="fa fa-plus"></i>
+    </button>
+  </div> -->
+
+  <form #categoryForm="ngForm" novalidate>
+    <!-- add new category -->
+    <div class="form-row" id="add">
+      <div class="form-group col-12 mb-0">
+        <label for="add" class="form-control-plaintext pl-2">Add category</label>
+      </div>
+      <div class="form-group col-9 col-lg-10">
+        <input #addCategory type="text" class="form-control form-control-lg" placeholder="Add a new Category"
+        (keyup)= "addCategoryBtn.disabled = $event.target.value.trim() === ''">
+      </div>
+      <div class="form-group col-3 col-lg-2">
+        <button #addCategoryBtn class="btn btn-primary btn-block" title="Add Category"
+        (click)="add(addCategory.value.trim())" [disabled]="true">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- filter categories -->
+    <div class="form-group" id="search">
+      <label for="search">Search categories</label>
+      <input type="text" id="searchCategory" class="form-control form-control-lg"
+      placeholder="Search for existing categories" (keyup)="filterQuery$.next($event.target.value)">
+    </div>
+
+    <!-- Information -->
+    <div class="form-inline" [hidden]="true">
+      <small class="form-text text-muted">Want to Start fresh?</small>&nbsp;
+      <small class="form-text">
+        <a href="#" class="text-primary" routerLink='/signin'><u>Delete all categories</u>.</a>
+      </small>
+    </div>
+
+  </form>
+  <!-- list of categories -->
+  <ul class="list-unstyled form-row">
+
+    <li class="col-12 display-4 text-center text-muted" *ngIf="!filteredCategories
+    || filteredCategories.length &lt; 1">You're all caught up</li>
+
+    <li class="col-12 col-lg-6" *ngFor="let category of filteredCategories">
+
+      <div class="card bg-light text-center" id="category-{{filteredCategories.indexOf(category)}}">
+
+        <!-- category icon -->
+        <div class="card-body">
+          <i class="fa fa-8x fa-exclamation-triangle text-silhouette"></i>
+        </div>
+
+        <!-- category name -->
+        <div class="card-footer text-left">
+          <h2 class="card-title" *ngIf="!category.editing">{{category.category}}</h2>
+          <input type="text" class="form-control text-center" id="categoryUpdate" name="categoryUpdate"
+          [(ngModel)]="category.category" #categoryUpdate="ngModel"
+          *ngIf="category.editing" [autofocus]="category.editing">
+        </div>
+
+        <div class="buttons float-right">
+          <!-- delete the category -->
+          <button class="btn btn-danger d-inline-block  rounded-circle mr-2" title="Delete Category"
+          (click)="delete(category)" *ngIf="!category.editing"><i class="fa fa-times"></i></button>
+          <!-- change the category name -->
+          <button class="btn btn-primary d-inline-block rounded-circle mr-2" title="Edit Category"
+          (click)="edit(category)" *ngIf="!category.editing"><i class="fa fa-pencil"></i></button>
+          <!-- update the category -->
+          <button class="btn btn-success d-inline-block rounded-circle mr-2" title="Update Category"
+          (click)="update(category)" *ngIf="category.editing"><i class="fa fa-check"></i></button>
+        </div>
+      </div>
+
+    </li>
+  </ul>
+
+</div>

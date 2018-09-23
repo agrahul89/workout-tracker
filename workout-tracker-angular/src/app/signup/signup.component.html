@@ -1,0 +1,88 @@
+<div class="signup">
+
+  <h3 class="section-header d-inline-block">Sign Up</h3>&nbsp;
+  <i class="fa fa-check-circle-o fa-lg text-primary" [hidden]="signupForm.invalid"></i>
+
+  <div class="alert alert-danger" role="alert" [hidden]="!registrationFailed">
+    <small>{{registrationMessage}}</small>
+  </div>
+  <div class="alert alert-success" role="alert" [hidden]="registrationFailed || registrationMessage===''">
+    <small>{{registrationMessage}} ! Login <a routerLink="/signin"><u>here</u></a></small>
+  </div>
+  <form #signupForm="ngForm" novalidate (submit)="onSubmit()">
+
+    <div class="form-group">
+      <!-- Header Title -->
+      <label for="firstname">First Name</label>
+      <!-- Component -->
+      <input type="text" class="form-control" id="firstname" name="firstname"
+      placeholder="Enter your First Name" required pattern="{{validationPatterns.firstname}}"
+      [(ngModel)]="registrationForm.firstname" #firstname="ngModel">
+      <!-- Error Message -->
+      <div class="alert alert-danger" role="alert"
+      [hidden]="firstname.valid || (firstname.pristine && firstname.untouched)">
+        <small>Please provide a valid First Name</small>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <!-- Header Title -->
+      <label for="lastname">Last Name</label>
+      <!-- Component -->
+      <input type="text" class="form-control" id="lastname" name="lastname"
+      placeholder="Enter your Family Name" required pattern="{{validationPatterns.lastname}}"
+      [(ngModel)]="registrationForm.lastname" #lastname="ngModel">
+      <!-- Error Message -->
+      <div class="alert alert-danger" role="alert"
+      [hidden]="lastname.valid || (lastname.pristine && lastname.untouched)">
+        <small>Please provide a valid Last Name</small>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <!-- Header Title -->
+      <label for="email">Email address</label>
+      <!-- Component -->
+      <input type="email" class="form-control" id="email" name="email"
+      placeholder="We will use this as your login name" required pattern="{{validationPatterns.email}}"
+      [(ngModel)]="registrationForm.email" #email="ngModel">
+      <!-- Error Message -->
+      <div class="alert alert-danger" role="alert"
+      [hidden]="email.valid || (email.pristine && email.untouched)">
+        <small>Please provide a valid email address</small>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <!-- Header Title -->
+      <label for="password">Password</label>
+      <!-- Component -->
+      <input type="password" class="form-control" id="password" name="password"
+      placeholder="Must be 8 characters. #@$- are allowed." required pattern="{{validationPatterns.password}}"
+      aria-describedby="passHelp"
+      [(ngModel)]="registrationForm.password" #password="ngModel">
+      <!-- Error Message -->
+      <div class="alert alert-danger" role="alert"
+      [hidden]="password.valid || (password.pristine && password.untouched)">
+        <ul class="list-unstyled">
+          <li *ngFor="let rule of validPasswordRules"><small>{{rule}}</small></li>
+        </ul>
+      </div>
+      <!-- Information -->
+      <small id="passHelp" [hidden]="(password.touched || password.dirty) && password.invalid">
+        Please include an uppercase & lowercase letter and one number
+      </small>
+    </div>
+
+    <!-- Component -->
+    <button type="submit" class="btn btn-primary btn-block" [disabled]="signupForm.invalid">Sign Up</button>
+
+    <!-- Information -->
+    <div class="form-inline">
+      <small class="form-text text-muted">Already registered?</small>&nbsp;
+      <small class="form-text">
+        <a href="#" class="text-primary" routerLink='/signin'>Login now!</a>
+      </small>
+    </div>
+  </form>
+</div>

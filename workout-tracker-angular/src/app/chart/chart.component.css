@@ -1,0 +1,46 @@
+input:focus {
+    box-shadow: none;
+    outline: none;
+  }
+
+.fa-10x {
+    font-size: 10em;
+}.fa-11x {
+    font-size: 11em;
+}.fa-12x {
+    font-size: 12em;
+}.fa-13x {
+    font-size: 13em;
+}.fa-14x {
+    font-size: 14em;
+}.fa-15x {
+    font-size: 15em;
+}
+
+.text-silhouette {
+    color: var(--shadow-color);
+}
+
+div.date-range-controls {
+    margin-bottom: 1rem;
+}
+
+div.chart-area {
+    min-height: 50vh;
+    margin-bottom: 1rem;
+}
+
+div.quick-controls {
+    /* min-height: 10vh; */
+    overflow-x: auto
+}
+div.quick-controls * {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+div.quick-controls *:first-child {
+    margin-left: 0rem;
+}
+div.quick-controls *:last-child {
+    margin-right: 0rem;
+}

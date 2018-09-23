@@ -1,0 +1,15 @@
+button.disabled, button:disabled {
+  cursor: not-allowed;
+}
+
+input {
+  font-size: 0.8rem;
+}
+input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.section-header {
+  margin-bottom: 1rem;
+}

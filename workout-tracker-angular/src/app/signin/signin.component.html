@@ -1,0 +1,33 @@
+<div class="signin">
+
+  <h3 class="section-header">Login</h3>
+  <div class="alert alert-danger" role="alert" *ngIf="!isLoggedIn()">
+    <small>Your login attempt was unsuccessful !</small>
+  </div>
+  <form #loginForm="ngForm" novalidate (submit)="onSubmit(signinForm)">
+    <div class="form-group">
+      <!-- Header Title -->
+      <label for="username">Username</label>
+      <!-- Component -->
+      <input type="username" class="form-control" id="username" name="username"
+      placeholder="email@company.domain" required
+      [(ngModel)]="signinForm.username" #username="ngModel">
+    </div>
+
+    <div class="form-group">
+      <!-- Header Title -->
+      <label for="password">Password</label>
+      <!-- Component -->
+      <input type="password" class="form-control" id="password" name="password"
+      placeholder="Password" required
+      [(ngModel)]="signinForm.password" #password="ngModel">
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-block" [disabled]="loginForm.invalid">Login</button>
+
+    <div class="form-inline">
+      <small class="form-text text-muted">Or</small>&nbsp;
+      <small class="form-text"><a href="#" class="text-primary" routerLink='/signup'>register now!</a></small>
+    </div>
+  </form>
+</div>
