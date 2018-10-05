@@ -1,5 +1,5 @@
 FROM java:8
-LABEL maintainer="rahul89.agarwal@gmail.com"
+LABEL maintainer="agrahul89"
 VOLUME /tmp
 EXPOSE 8080
 ADD target/workout-tracker-exec.jar workout-tracker-exec.jar
